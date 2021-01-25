@@ -4,7 +4,7 @@ The goal of the project is to detect situps, pushups, squats and jumping jacks, 
 
 ## Hardware
 
-**STM32F407** (Arm) microcontroller, with in-built **LIS3DSH** accelerometer is used. The readings from accelerometer is used differentiate different exercises, and LEDs on board are used to indicate a particular type of exercise. The **USER BUTTON** is used to indicate beginning of demo, as well as beginning of actual exercise
+**STM32F407** (Arm) microcontroller, with on-board **LIS3DSH** accelerometer is used. The readings from accelerometer is used to differentiate different exercises, and LEDs on board are used to indicate a particular type of exercise. The **USER BUTTON** is used to indicate beginning of demo, as well as beginning of actual exercise.
 
 ## Data Collection
 
@@ -36,8 +36,8 @@ First, the entire problem is divided into two sub-problems, **lying exercise** a
 
 ## Installation/Use
 
-This project was created in Visual Studio Code. While creating a new project, choose board name as **ST STM32F4DISCOVERY**, framework as Mbed. Only the files in **src** folder is needed.
+This project was created in Visual Studio Code. While creating a new project, choose board name as **ST STM32F4DISCOVERY**, framework as **Mbed**. Only the files in **src** folder is needed.
 
 ## Protocols, Libraries and Peripherals
 
-LIS3DSH library for Mbed framework is used. To receive data from the accelerometer, SPI serial communication protocol is used. Timers are used in Counting mode, the timer limit has to be changed accordingly if you want to increase the repetitions in each exercise.
+LIS3DSH library for Mbed framework is used. To receive data from the accelerometer, **SPI** serial communication protocol is used. **Timers** are used in Counting mode, the timer limit has to be changed accordingly if you want to increase the repetitions in each exercise.
