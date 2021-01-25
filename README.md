@@ -34,5 +34,10 @@ First in detection mode, once button is pressed, first 20 values of raw Y, raw Z
 
 First, the entire problem is divided into sub-problem, into **lying exercise** and **standing exercise** type. This is done based on raw Y acceleration mean values. If it’s lying type exercise, raw Z acceleration mean values and angle wrt Z axis is used to differentiate between situp and pushup. If it’s standing type exercise, raw Y acceleration standard deviation values are used to differentiate between squat and jumping jack.
 
+## Installation/Use
 
+This project was created in Visual Studio Code. While creating a new project, choose board name as **ST STM32F4DISCOVERY**, framework as Mbed. Only the files in **src** folder is needed.
 
+## Protocols and Libraries
+
+LIS3DSH library for Mbed framework is used. To receive data from the accelerometer, SPI serial communication protocol is used.
